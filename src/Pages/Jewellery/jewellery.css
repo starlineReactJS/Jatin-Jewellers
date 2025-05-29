@@ -1,0 +1,37 @@
+.jewelleryimage img {
+    width: 100%;
+    object-fit: contain;
+    height: 280px;
+}
+
+.jewelrytittle {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.jewelrytittle h2 {
+    color: #ba9943;
+}
+
+.jewelleryimage {
+    border: 2px solid #d3be67;
+}
+
+.productdesss {
+    text-align: center;
+}
+
+.productdesss p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.productdesss h3 {
+    text-align: center;
+    background: #d3be67;
+    border: 1px solid #d3be67;
+    margin: 5px 0 10px;
+    padding: 4px 0px;
+    font-size: 24px;
+    color: #fff;
+}

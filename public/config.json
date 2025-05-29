@@ -1,0 +1,10 @@
+{
+    "baseUrl": "https://starlinebullion.co.in",
+    "endpoint": "/api/bullion",
+    "socketPort": "10001",
+    "prjName": "jatin",
+    "androidUrl": "",
+    "iosUrl": "",
+    "webService": "/WebService/WebService.asmx",
+    "ClientId": 3
+}

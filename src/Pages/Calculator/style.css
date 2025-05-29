@@ -1,0 +1,218 @@
+.radio-section label {
+    color: #000;
+}
+
+article {
+    display: none;
+}
+
+article.on {
+    display: block;
+}
+
+.radio-section {
+    margin: 15px 0px 10px;
+    padding: 15px 0px 5px;
+    border-bottom: 1px solid #ababab;
+}
+
+.cal-tabel .table thead tr {
+    background-color: #1c2a38;
+    color: #fff;
+    font-weight: normal;
+    border: 0;
+}
+
+.cal-tabel .table thead tr th {
+    font-weight: normal;
+    text-align: center;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    border: 0;
+}
+
+.cal-tabel .table tr td {
+    font-weight: normal;
+    text-align: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cal-tabel .table tr td input {
+    height: 33px;
+    border: 1px solid #c8c8c8;
+    border-radius: 3px;
+    color: #000;
+    padding: 0 5px;
+}
+
+.del_btn i {
+    color: red;
+    font-size: 20px;
+}
+
+.input-bx-top label {
+    color: #000;
+}
+
+.add-button {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.add-button button {
+    background-color: #1c2a38;
+    color: #fff;
+    border: 0px solid #ababab;
+    padding: 5px 20px;
+    border-radius: 3px;
+}
+
+.calculate-section {
+    width: 50%;
+    margin: 0 auto;
+    background: #1c2a38;
+    padding: 10px;
+    border: 1px solid #021c1b;
+}
+
+tbody#printdata {
+    background: #dfdfdf;
+}
+
+.calculate-section .table tr td {
+    text-align: left;
+    color: #fff;
+    padding: 10px;
+    font-weight: 600;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    width: 50%;
+}
+
+span.saperate {
+    float: right;
+}
+
+.calculate-section i {
+    margin-right: 5px;
+}
+
+.calculate-section .table {
+    margin: 0px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+.radio-tab-main-cover input::-webkit-outer-spin-button,
+.radio-tab-main-cover input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.radio-tab-main-cover input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.input-bx-top input {
+    width: 400px;
+    height: 39px;
+    border: 1px solid #c8c8c8;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.input-bx-top {
+    margin-top: 27px;
+}
+
+.calculator-cover,
+.main-cover {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.calculator-cover {
+    background: #fff;
+    padding: 12px 25px;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 22%) 0px 0px 10px;
+    border: 1px solid #a1a1a1;
+    margin-bottom: 21px;
+}
+
+/* .radio-tab-main-cover {
+    color: #fff;
+} */
+
+@media screen and (max-width:991px) {
+
+    @media screen and (max-width:991px) {
+        .calculator-cover {
+            overflow-x: scroll;
+        }
+    }
+
+}
+
+@media screen and (max-width:664px) {
+
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+        font-size: 10px;
+    }
+
+    .calculator-cover {
+        padding: 12px 4px;
+    }
+
+    .cal-tabel .table tr td input {
+        height: 27px;
+    }
+
+    .cal-tabel .table tr td input {
+        width: 62px;
+        text-align: center;
+    }
+
+    .calculate-section {
+        padding: 7px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .input-bx-top input {
+        width: 100%;
+    }
+
+    .radio-section {
+        margin: 0px 0px 10px;
+        padding: 0px 0px 5px;
+    }
+
+    .actab li.nav-item a {
+        padding: 1px 15px;
+    }
+
+}
+
+.nav-pills.actab .nav-link.active,
+.nav-pills .show>.nav-link {
+    background: #e39600 !important;
+}
+
+.actab li.nav-item a {
+    color: #000;
+    padding: 5px 35px;
+    background: #ddd;
+    margin: 0 6px;
+    border: 1px solid #c3c3c3;
+}
+
+input#WeightUnit {
+    width: 20%;
+}
