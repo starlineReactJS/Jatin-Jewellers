@@ -415,12 +415,12 @@ header .nav-item {
 
 
 .mn-rate-cover .bgm {
-  font-size: 52px;
+  font-size: 40px;
   padding: 3px 5px 3px 5px;
   display: inline-block;
   font-weight: 600;
   color: #d6c26c;
-  background: #000;
+  background: #00000000;
 }
 
 table {

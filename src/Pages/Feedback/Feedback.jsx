@@ -12,6 +12,8 @@ export default function Feedback() {
     // Client Data Redux 
     const clientdata = useSelector((state) => state.clientDetails);
 
+    console.log("clientdata: ", clientdata);
+
     //Form Data states
     let dataRefObj = {
         address: [],

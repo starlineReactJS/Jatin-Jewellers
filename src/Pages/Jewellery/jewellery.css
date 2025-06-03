@@ -16,7 +16,11 @@
 .jewelleryimage {
     border: 2px solid #d3be67;
 }
-
+.modal_p_mname{
+    text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+}
 .productdesss {
     text-align: center;
 }
