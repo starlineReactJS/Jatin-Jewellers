@@ -1,7 +1,7 @@
 .jewelleryimage img {
     width: 100%;
-    object-fit: contain;
-    height: 280px;
+        object-fit: cover;
+        height: 280px;
 }
 
 .jewelrytittle {
