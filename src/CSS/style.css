@@ -367,6 +367,7 @@ header .nav-item {
   background: #161616;
   border: 1px solid #3a3a3a;
   clear: both;
+  position: relative;
 }
 
 .content-cover:first-child {}
@@ -415,19 +416,25 @@ header .nav-item {
 
 
 .mn-rate-cover .bgm {
-  font-size: 40px;
-  padding: 3px 5px 3px 5px;
-  display: inline-block;
-  font-weight: 600;
-  color: #d6c26c;
-  background: #00000000;
+  font-size: 30px;
+    padding: 3px 5px 3px 5px;
+    display: inline-block;
+    font-weight: 600;
+    color: #d6c26c;
+    background: #00000000;
+    line-height: normal;
 }
 
 table {
   width: 100%;
 }
 
-.e {}
+.not_trading {
+  color: #ff5656;
+    font-size: 16px;
+    padding-bottom: 8px;
+    text-align: center;
+}
 
 .product-rate a input[type="button"] {
   background: #fbcb4b;
@@ -578,7 +585,7 @@ span.bgm.e.redbg {
 }
 
 .mrt .bs2 span {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
   color: #ffffff;
   padding: 3px 5px;
@@ -2128,7 +2135,6 @@ div#DivBankRecord {
   position: relative;
   background: #000000;
   margin: 0;
-  padding: 6px 20px;
   text-align: center;
   text-transform: capitalize;
   list-style: none;
@@ -2139,6 +2145,9 @@ div#DivBankRecord {
 
 .dropdown li a {
   text-decoration: none;
+    width: 100%;
+    display: block;
+    padding: 6px 20px;color: #fff;
 }
 
 .dropdown-subcategory {

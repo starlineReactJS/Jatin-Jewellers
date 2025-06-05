@@ -12,6 +12,7 @@ import Otr from "./Pages/Otr/Otr";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Jewellery from "./Pages/Jewellery/jewellery";
+import Category from "./Pages/Category/category";
 
 let SocketContext = createContext();
 
@@ -39,7 +40,8 @@ function App() {
                   }else {
                     return (
                     <React.Fragment key={index}>
-                      <Route path={`/${page?.path}`} element={page?.element} />
+                        <Route path={`/${page?.path}`} element={page?.element} />
+                        <Route path="/category" element={<Category />} />
                     </React.Fragment>
                   );
                   }

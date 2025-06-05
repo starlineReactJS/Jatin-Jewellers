@@ -134,7 +134,7 @@ export default function Header() {
                                                                     {categoryData?.length > 0 && categoryData.map((item, ind) => {
                                                                         return (
                                                                             <li className="dropdown-subcategory" key={ind}>
-                                                                                <a>{item.name}</a>
+                                                                                <Link to={`/category`} >{item.name}</Link>
                                                                                 <ul className="dropdown">
                                                                                     {item.subcategories.map((subItem, subInd) => (
                                                                                         <li className="subcategory-item" key={subInd}>
