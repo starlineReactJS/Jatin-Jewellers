@@ -1,32 +1,32 @@
-import React, { useEffect, useState } from 'react'
-import './jewellery.css'
+import React, { useEffect, useState } from 'react';
+import './jewellery.css';
 import { getJewelleryApi } from '../../Api Methods';
 import { useParams } from 'react-router-dom';
 
 
 const Jewellery = () => {
   const [jewelleyData, setjewelleyData] = useState([]);
-  const [jewelleryImg, setJewelleyImg] = useState("")
+  const [jewelleryImg, setJewelleyImg] = useState("");
   const [jewelleryDescription, setJewelleryDescription] = useState("");
-  const subId = useParams().id
+  const subId = useParams().id;
 
   const handleGetJewellery = async () => {
 
     try {
-      let res = await getJewelleryApi(subId)
+      let res = await getJewelleryApi(subId);
       if (!!res) {
-        let resD = JSON.parse(res.d)
-        setjewelleyData(resD)
+        let resD = JSON.parse(res.d);
+        setjewelleyData(resD);
       } else {
-        setjewelleyData([])
+        setjewelleyData([]);
       }
     } catch (error) {
-      console.log('error an GetHomeList',)
+      console.log('error an GetHomeList',);
     }
-  }
+  };
 
   useEffect(() => {
-    handleGetJewellery()
+    handleGetJewellery();
   }, [subId]);
 
   return (
@@ -52,7 +52,7 @@ const Jewellery = () => {
               </div>
               <div className="modal-body">
                 <div className="jewellery-image-pop-cover">
-                  <img style={{ width:'100%'}} src={jewelleryImg} alt="" />
+                  <img style={{ width: '100%' }} src={jewelleryImg} alt="" />
                 </div>
                 <p className='modal_p_mname'>{jewelleryDescription}</p>
               </div>
@@ -60,6 +60,7 @@ const Jewellery = () => {
           </div>
         </div>
         {jewelleyData?.length > 0 ? jewelleyData?.map((item, ind) => {
+          let mrp = ((parseInt(item?.ArtNo.split(',').join('')) || 0) + (Number(item?.commonPremium) || 0)).toLocaleString('en-IN');
           return (
             <div className='col-md-3' key={ind} onClick={() => {
               setJewelleyImg(!!item?.Image ? `${item?.Image}?${Math.random()}` : "");
@@ -69,10 +70,10 @@ const Jewellery = () => {
                 <img src={`${item?.Image}?${Math.random()}`} alt={`jewellery_Image` + ind} loading='lazy' />
               </div>
               <div className='productdesss'>
-                <h3>MRP: <span>{item.ArtNo}</span></h3>
+                <h3>MRP: <span>{mrp}</span></h3>
 
               </div>
-            </div>)
+            </div>);
         }) : <h2 className='text-center mb-4' style={{ color: "#fff" }}>Not Available</h2>}
 
 
@@ -80,7 +81,7 @@ const Jewellery = () => {
     </div >
 
 
-  )
-}
+  );
+};
 
-export default Jewellery
+export default Jewellery;
