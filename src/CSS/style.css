@@ -417,12 +417,12 @@ header .nav-item {
 
 .mn-rate-cover .bgm {
   font-size: 30px;
-    padding: 3px 5px 3px 5px;
-    display: inline-block;
-    font-weight: 600;
-    color: #d6c26c;
-    background: #00000000;
-    line-height: normal;
+  padding: 3px 5px 3px 5px;
+  display: inline-block;
+  font-weight: 600;
+  color: #d6c26c;
+  background: #00000000;
+  line-height: normal;
 }
 
 table {
@@ -431,9 +431,9 @@ table {
 
 .not_trading {
   color: #ff5656;
-    font-size: 16px;
-    padding-bottom: 8px;
-    text-align: center;
+  font-size: 16px;
+  padding-bottom: 8px;
+  text-align: center;
 }
 
 .product-rate a input[type="button"] {
@@ -2145,9 +2145,10 @@ div#DivBankRecord {
 
 .dropdown li a {
   text-decoration: none;
-    width: 100%;
-    display: block;
-    padding: 6px 20px;color: #fff;
+  width: 100%;
+  display: block;
+  padding: 6px 20px;
+  color: #fff;
 }
 
 .dropdown-subcategory {
@@ -2161,6 +2162,8 @@ div#DivBankRecord {
   top: 0%;
   left: 100%;
   text-align: center;
+  height: 267px;
+  overflow-y: auto;
 }
 
 .dropdown li:hover ul {
