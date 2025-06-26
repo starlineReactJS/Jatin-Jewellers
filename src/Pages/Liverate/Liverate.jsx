@@ -125,9 +125,9 @@ export default function Liverate() {
           const bgBid = backgroundColorClass(item?.Bid, previousMainProduct[index]?.Bid);
 
           return (
-            
+
             <div className="content-cover" key={`maindata_${item?.name}`}>
-              
+
               <table>
                 <tbody>
                   <tr className="ligh-white">
@@ -136,7 +136,7 @@ export default function Liverate() {
                         <h3>
                           {item?.Symbol}
                         </h3>
-                        
+
                         {/* <p style={{  color: '#000',  marginTop: '8px'}}> {item?.desc}</p> */}
                       </div>
                     </td>
@@ -472,7 +472,7 @@ export default function Liverate() {
                 <Skeleton dependency={{ maindata: maindata }} isLoading={(data) => dataLoadedFn(data, "mainData")} height='300px' />
                 :
                 <div style={{ display: Ratedisplay }}>
-                  <p className='not_trading'>ABOVE RATES ARE NOT FOR TRADING</p>
+
                   <div id="divHeader" style={{ display: !(!!isLoading?.maindata) ? "none" : "block" }}>
                     <div className="c-c">
                       <div className="m">
@@ -554,6 +554,7 @@ export default function Liverate() {
                 : <div style={{ display: !Object.values(displaySpot.current).includes(true) ? "none" : "" }}>
                   <div style={{ display: !(!!isLoading?.referenceProductData) ? "none" : "block" }}>
                     <div className="row">
+                      <p className='not_trading'>ABOVE RATES ARE NOT FOR TRADING</p>
                       <div className="col-md-12 col-sm-12 mt-2" >
                         <div className="mheader" id="divFutureHd">
                           <div className="mheader" id="divSpotHd">
