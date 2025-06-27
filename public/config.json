@@ -3,8 +3,8 @@
     "endpoint": "/api/bullion",
     "socketPort": "10001",
     "prjName": "jatin",
-    "androidUrl": "",
-    "iosUrl": "",
+    "androidUrl": "https://play.google.com/store/apps/details?id=com.jatinjewellers",
+    "iosUrl": "https://apps.apple.com/in/app/jatin-jewellers/id6747564286",
     "webService": "/WebService/WebService.asmx",
     "ClientId": 3
 }
