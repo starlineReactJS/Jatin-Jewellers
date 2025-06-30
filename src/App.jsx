@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './CSS/bootstrap.min.css';
 import './CSS/font-awesome.min.css';
@@ -20,6 +20,12 @@ function App() {
   let otrFetch = localStorage.getItem('otrDetails');
   otrFetch = JSON.parse(otrFetch);
 
+  useEffect(() => {
+    if (window.location.protocol === "http:") {
+      window.location.href = window.location.href.replace("http:", "https:");
+    }
+  }, []);
+
   return (
     <>
       <BrowserRouter>
@@ -32,18 +38,18 @@ function App() {
               <Route path="/" element={<BaseLayout />}>
                 {menuTitleArr?.length > 0 && menuTitleArr?.map((page, index) => {
                   if ((!(!!page?.display))) return false;
-                  if(page.path === "jewellery"){
-                    return  <React.Fragment key={index}>
+                  if (page.path === "jewellery") {
+                    return <React.Fragment key={index}>
                       <Route path={`/${page?.path}/:id`} element={page?.element} />
                     </React.Fragment>
-                  }else {
+                  } else {
                     return (
-                    <React.Fragment key={index}>
-                      <Route path={`/${page?.path}`} element={page?.element} />
-                    </React.Fragment>
-                  );
+                      <React.Fragment key={index}>
+                        <Route path={`/${page?.path}`} element={page?.element} />
+                      </React.Fragment>
+                    );
                   }
-                  
+
                 })}
               </Route>
               <Route path="*" element={<NotFoundPage />} />
